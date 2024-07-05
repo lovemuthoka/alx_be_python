@@ -1,51 +1,50 @@
-# shopping_list_manager.py
+shopping_list = []
 
 def display_menu():
-    print("\nShopping List Manager")
-    print("1. Add an item")
-    print("2. Remove an item")
-    print("3. View the list")
+    print("Shopping List Manager")
+    print("1. Add  item")
+    print("2. Remove  item")
+    print("3. View shopping items")
     print("4. Exit")
-
-def add_item(shopping_list):
-    apple = input("Enter the item to add: ").strip()
-    shopping_list.append(apple)
-    print(f"'{apple}' has been added to the shopping list.")
-
-def remove_item(shopping_list):
-    ring = input("Enter the item to remove: ").strip()
-    if ring in shopping_list:
-        shopping_list.remove(ring)
-        print(f"'{ring}' has been removed from the shopping list.")
-    else:
-        print(f"'{ring}' is not in the shopping list.")
-
-def view_list(shopping_list):
-    if shopping_list:
-        print("\nCurrent Shopping List:")
-        for item in shopping_list:
-            print(f"- {item}")
-    else:
-        print("\nThe shopping list is empty.")
 
 def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Choose an option: ").strip()
-        
+        choice = int(input("Enter your choice: []"))
+
         if choice == '1':
-            add_item(shopping_list)
+            # Prompt for and add an item
+<<<<<<< HEAD
+            item = input("Enter the item to add: ")
+            shopping_list.append()
+            print(f"Shopping_list_manager: {item}")
+            
+=======
+            item = input(Enter the item to add:  )
+            shopping_list.append('juice')
+            print(f"Shopping_list_manager: {item}")
+            pass
+display_menu()
+>>>>>>> aeff786b5d2434f3791224b688a090cfd6befd3f
+
         elif choice == '2':
-            remove_item(shopping_list)
+            # Prompt for and remove an item
+            item = input("Enter the item to remove:")
+            shopping_list.remove('apple')
+            print (f"Shopping_list_manager: {item}")
+            
         elif choice == '3':
-            view_list(shopping_list)
+             #Display the shopping list
+            for items in shopping_list:
+                print("shopping_list")
+            
+
         elif choice == '4':
-    
-            print("Exiting the shopping list manager. Goodbye!")
+            print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please choose a valid option.")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
-    main()
+    main()i)
