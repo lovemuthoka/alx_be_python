@@ -1,5 +1,6 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
+# Function to display the current date and time
 def display_current_datetime():
     # Obtain the current date and time
     current_date = datetime.now()
@@ -10,10 +11,7 @@ def display_current_datetime():
     # Print the formatted date and time
     print(f"The current date and time is: {formatted_date}")
 
-# Call the function to display the current date and time
-display_current_datetime()
-from datetime import datetime, timedelta
-
+# Function to calculate a future date
 def calculate_future_date(days):
     # Obtain the current date and time
     current_date = datetime.now()
@@ -27,9 +25,12 @@ def calculate_future_date(days):
     # Print the future date
     print(f"The date after {days} days will be: {formatted_future_date}")
 
+# Display the current date and time
+display_current_datetime()
+
 # Prompt the user to enter a number of days
-days = int(input("Enter the number of days: "))
+days = int(input("Enter the number of days to add to the current date: "))
 
-# Call the function to calculate and display the future date
+# Calculate and display the future date
 calculate_future_date(days)
-
+r
