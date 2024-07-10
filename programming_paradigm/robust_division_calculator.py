@@ -13,4 +13,4 @@ def safe_divide(numerator, denominator):
     except ValueError:
         print("Error: Please enter numeric values only.")
     
-safe_divide(90,15) 
+safe_divide(90,15)
